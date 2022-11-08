@@ -8,7 +8,17 @@
       - name: Merhaba Dunya
         debug:
           msg: "Denemee2"
-      - name: packages install
-        yum:
-          - openssh-server
-          - unzip
+      - name: Install httpd
+          yum:
+            name: { { item } }
+            state: latest
+          with_items:
+            - httpd
+          when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+      - name: Install apache
+          apt:
+            name: { { item } }
+            state: latest
+          with_items:
+            - apache2
+          when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
