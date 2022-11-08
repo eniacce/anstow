@@ -10,11 +10,11 @@
           msg: "Denemee2"
       - name: Install httpd
         yum:
-          name: httpd
+          name: unzip
           state: latest
         when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
       - name: Install apache
         apt:
-          name: apache2
+          name: unzip
           state: latest
         when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
