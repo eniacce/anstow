@@ -5,3 +5,6 @@
       - name: Merhaba Dunya
         debug:
           msg: "Denemee"
+      - name: Merhaba Dunya
+          debug:
+            msg: "Denemee2"
