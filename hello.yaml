@@ -8,3 +8,7 @@
       - name: Merhaba Dunya
         debug:
           msg: "Denemee2"
+      - name: packages install
+        yum:
+          - openssh-server
+          - unzip
