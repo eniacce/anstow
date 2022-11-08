@@ -13,12 +13,12 @@
           name: { { item } }
           state: latest
         with_items:
-         - httpd
-        when: ansible_distribution == "CentOS" or ansible_distribution == "Red Hat Enterprise Linux"
+          - httpd
+        when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
       - name: Install apache
         apt:
           name: { { item } }
           state: latest
         with_items:
-         - apache2
-        when: ansible_distribution == "Debian" or ansible_distribution == "Ubuntu"
+          - apache2
+        when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
