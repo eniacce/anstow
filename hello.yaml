@@ -6,8 +6,8 @@
         debug:
           msg: "Denemee"
       - name: Merhaba Dunya
-          debug:
-            msg: "Denemeedesteyiz"
+        debug:
+          msg: "Denemeedesteyiz"
       - name: Merhaba Dunya
         debug:
           msg: "Denemee2"
