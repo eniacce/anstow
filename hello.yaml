@@ -4,7 +4,7 @@
   tasks:
       - name: Merhaba Dunya
         debug:
-          msg: "Denemee"
+          msg: "Denemeessss"
       - name: Merhaba Dunya
         debug:
           msg: "Denemeedesteyiz"
